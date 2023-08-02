@@ -5,7 +5,6 @@
     </div>
    
 </template>
-
 <script>
 import Info from './Info.vue'
 export default {

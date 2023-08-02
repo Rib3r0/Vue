@@ -3,7 +3,16 @@ const { createApp, ref } = Vue
 const MyNameApp = {
     data() {
         return {
-            name: 'Eduardo'
+            name: "",
+            input_name: ""
+        }
+    },
+    methods: {
+        submitForm(e) {
+            e.preventDefault()
+            console.log(this.input_name)
+
+            this.name = this.input_name
         }
     }
 }
